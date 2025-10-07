@@ -1,26 +1,13 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
- <div>
-             {/* value={typeof window !== "undefined" ? (document.documentElement.classList.contains('dark') ? 'dark' : (localStorage.theme === 'system' ? 'system' : 'light')) : 'system'}
-                        onValueChange={(value) => {
-                            if (value === 'system') {
-                                localStorage.theme = 'system';
-                                if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                                    document.documentElement.classList.add('dark');
-                                } else {
-                                    document.documentElement.classList.remove('dark');
-                                }
-                            } else if (value === 'dark') {
-                                localStorage.theme = 'dark';
-                                document.documentElement.classList.add('dark');
-                            } else {
-                                localStorage.theme = 'light';
-                                document.documentElement.classList.remove('dark');
-                            }
-                        }} */}
-                        Home page
+ <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <Link href="/dashborad">
+    <Button variant="outline">Dashboard</Button>
+    </Link>
  </div>
   );
 }

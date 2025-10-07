@@ -54,7 +54,7 @@ const items = [
   },
   {
     title: "Inbox",
-    url: "#",
+    url: "/dashborad/addproduct",
     icon: Inbox,
   },
   {
